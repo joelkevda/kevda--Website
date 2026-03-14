@@ -41,7 +41,7 @@ export function Footer() {
            </div>
 
            <div className="flex flex-col items-start lg:items-end gap-12 w-full lg:w-auto h-full justify-between lg:col-span-1">
-              <Link href="/contact" className="bg-[#d3b582] px-6 py-4 rounded-full text-black font-medium hover:scale-105 transition-transform flex items-center gap-3 shadow-lg shadow-[#d3b582]/30">
+              <Link href="/contact" className="bg-[#d3b582] px-6 py-4 rounded-full text-black font-medium hover:scale-105 transition-transform flex items-center justify-center text-center w-full sm:w-auto gap-3 shadow-lg shadow-[#d3b582]/30">
                 Start a Confidential Discussion
               </Link>
 

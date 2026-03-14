@@ -324,9 +324,9 @@ export const CapabilityTemplate: React.FC<CapabilityProps> = ({
               <p className="text-sm text-gray-400">Here&apos;s a preview of what exactly you will receive</p>
            </div>
            
-           <div className="p-8 lg:p-12 flex flex-col lg:flex-row gap-12">
+           <div className="p-6 md:p-8 lg:p-12 flex flex-col lg:flex-row gap-8 lg:gap-12">
               {/* Left Content List */}
-              <div className="flex-1 bg-[#dbe4e4] rounded-[32px] p-8 lg:p-12 relative flex flex-col gap-4">
+              <div className="flex-1 bg-[#dbe4e4] rounded-[32px] p-6 lg:p-12 relative flex flex-col gap-4">
                  <div className="absolute top-4 right-4 text-[#8a9b9b]">
                     <Zap size={20} />
                  </div>

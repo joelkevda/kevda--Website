@@ -222,14 +222,14 @@ export default function FrameQuality() {
               Here&apos;s a preview of what exactly you will receive
             </p>
           </div>
-          <div className="p-8 lg:p-12 flex flex-col lg:flex-row gap-12">
-            <div className="flex-1 bg-[#dbe4e4] rounded-[32px] p-8 lg:p-12 relative flex items-center gap-6">
+          <div className="p-6 md:p-8 lg:p-12 flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div className="flex-1 bg-[#dbe4e4] rounded-[32px] p-6 md:p-8 lg:p-12 relative flex items-start md:items-center gap-6">
               <div className="absolute top-4 right-4 text-[#8a9b9b]">
                 <Zap size={20} />
               </div>
-              <div className="bg-white rounded-2xl p-6 flex items-center gap-6 shadow-sm w-full">
-                <Zap size={24} className="text-[#a0c5c1]" />
-                <p className="text-xl text-gray-600 leading-relaxed font-medium">
+              <div className="bg-white rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 shadow-sm w-full">
+                <Zap size={24} className="text-[#a0c5c1] shrink-0" />
+                <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium">
                   Eligible workflows may include CoA-style summaries — residual
                   DNA, endotoxin, and stability — aligned to scope and client
                   requirements
