@@ -21,7 +21,7 @@ export default function FrameRNA() {
   const workflowSteps = [
     { title: "IVT", icon: "/imgs/specialized rna/ivt.png" },
     { title: "LNP", icon: "/imgs/specialized rna/lnp.png" },
-    { title: "Integrity", icon: "/imgs/specialized rna/integrity.png" },
+    { title: "Integrity", icon: "/imgs/specialized rna/Integrity.png" },
     { title: "Sizing", icon: "/imgs/specialized rna/sizing.png" },
     { title: "Data Package", icon: "/imgs/specialized rna/data.png" },
   ];
