@@ -65,7 +65,7 @@ export function Header() {
 
           <Link 
             href="/contact" 
-            className="hidden md:block bg-[#d3b582] text-white px-6 py-3 rounded-full text-sm lg:text-base font-medium transition-all duration-300 hover:scale-[1.05] hover:shadow-lg whitespace-nowrap cursor-pointer"
+            className="hidden md:block bg-[#d3b582] text-white px-6 py-3 rounded-full text-sm lg:text-base font-medium transition-all duration-300 hover:scale-[1.05] hover:shadow-lg cursor-pointer text-center whitespace-normal"
           >
             Start a Confidential Discussion
           </Link>

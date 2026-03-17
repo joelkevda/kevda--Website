@@ -39,7 +39,7 @@ export function KevdaAdvantage() {
   transition={{ duration: 0.8, ease: "easeOut" }} className="bg-white w-full py-16 md:py-20 overflow-hidden px-6 md:px-10 lg:px-16 relative z-10">
       <div className="w-full">
         {/* Dark wrapper */}
-        <div className="bg-[#084d43] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap rounded-[24px] py-6 md:py-8 px-4 sm:px-8 md:px-14 flex flex-col items-start w-full relative overflow-hidden">
+        <div className="bg-[#084d43] rounded-[24px] py-6 md:py-8 px-4 sm:px-8 md:px-14 flex flex-col items-start w-full relative overflow-hidden">
           {/* Title */}
           <div className="flex items-center justify-between w-full mb-4 md:mb-6">
             <h2 className="text-3xl sm:text-4xl md:text-[48px] font-medium text-white leading-tight">
@@ -76,7 +76,7 @@ export function KevdaAdvantage() {
 
           {/* CTA button bottom right */}
           <div className="flex justify-end w-full mt-8 md:mt-16">
-            <button className="bg-[#d3b582] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-nowrap backdrop-blur-md transition-transform hover:scale-105">
+            <button className="bg-[#d3b582] w-full sm:w-auto text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal backdrop-blur-md transition-transform hover:scale-105 text-center whitespace-normal">
               Start a Confidential Discussion
             </button>
           </div>

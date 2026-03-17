@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -41,15 +42,15 @@ export function Footer() {
            </div>
 
            <div className="flex flex-col items-start lg:items-end gap-12 w-full lg:w-auto h-full justify-between lg:col-span-1">
-              <Link href="/contact" className="bg-[#d3b582] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap px-6 py-4 rounded-full text-black font-medium hover:scale-105 transition-transform flex items-center justify-center text-center w-full sm:w-auto gap-3 shadow-lg shadow-[#d3b582]/30">
+              <Link href="/contact" className="bg-[#d3b582] w-full sm:w-auto px-6 py-4 rounded-full text-black font-medium hover:scale-105 transition-transform flex items-center justify-center text-center gap-3 shadow-lg shadow-[#d3b582]/30 whitespace-normal">
                 Start a Confidential Discussion
               </Link>
 
               <div className="flex flex-col items-start lg:items-end gap-16 text-sm text-[#1b1819]">
-                 <p className="font-medium text-base">info@kevdabioworks.com</p>
-                 <div className="flex flex-col items-start lg:items-end gap-1 text-right">
-                    <p className="text-gray-600">Boston, MA | Bangalore, India</p>
-                 </div>
+                 <div className="flex items-center gap-2 text-gray-500 font-medium text-sm md:text-base">
+              <MapPin className="w-4 h-4 md:w-5 md:h-5 text-gray-400" />
+              <span>Boston, MA | Bangalore, India</span>
+            </div>
               </div>
            </div>
         </div>

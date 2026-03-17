@@ -16,6 +16,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Space Grotesk', var(--font-space-grotesk), sans-serif;
+  overflow-x: hidden;
 }
 
 /* Space Grotesk font family utility */

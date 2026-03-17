@@ -1,7 +1,9 @@
+"use client";
 import { motion } from "motion/react";
 import Spline from "@splinetool/react-spline";
 import React, { Suspense } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowDown, MapPin } from "lucide-react";
 import { UnifiedCTA } from "@/components/sections/UnifiedCTA";
 import { PageWrapper } from "@/components/layout/PageWrapper";
@@ -21,7 +23,7 @@ export default function FrameAbout() {
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, margin: "-100px" }}
-  transition={{ duration: 0.8, ease: "easeOut" }} id="about-hero" className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center pb-16 px-6 md:px-10 lg:px-16 overflow-hidden bg-white">
+  transition={{ duration: 0.8, ease: "easeOut" }} id="about-hero" className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center pb-16 px-6 md:px-10 lg:px-16 bg-white overflow-visible">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,12 +54,12 @@ export default function FrameAbout() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4"
           >
-            <button className="bg-[#d3b582] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-nowrap transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer">
+            <Link href="/contact" className="bg-[#d3b582] w-full sm:w-auto text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer flex items-center justify-center text-center whitespace-normal">
               Start a Confidential Discussion
-            </button>
-            <button className="bg-[#084d43] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-nowrap transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer">
+            </Link>
+            <Link href="/capabilities" className="bg-[#084d43] w-full sm:w-auto text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer flex items-center justify-center text-center whitespace-normal">
               Explore Capabilities
-            </button>
+            </Link>
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
@@ -71,11 +73,11 @@ export default function FrameAbout() {
         </motion.div>
 
         {/* Background Graphic */}
-        <div className="relative md:absolute md:inset-0 pointer-events-none opacity-80 overflow-hidden w-full h-[400px] md:h-full order-2 md:order-0 mt-12 md:mt-0">
+        <div className="relative md:absolute md:inset-0 pointer-events-none opacity-80 w-full h-[400px] md:h-full order-2 md:order-0 mt-12 md:mt-0">
           <Suspense fallback={<div className="w-full h-full bg-white" />}>
             <Spline 
               scene="/spline/home.splinecode" 
-              className="w-full h-full object-cover md:pl-160 md:scale-130"
+              className="w-full h-full object-cover md:pl-40 lg:pl-80 xl:pl-160 md:scale-105 lg:scale-115 xl:scale-130"
             />
           </Suspense>
         </div>
@@ -94,8 +96,8 @@ export default function FrameAbout() {
   viewport={{ once: true, margin: "-100px" }}
   transition={{ duration: 0.8, ease: "easeOut" }} id="about-story" className="bg-white w-full py-20 md:py-32 px-6 md:px-10 lg:px-16 relative z-10">
         <div className="w-full max-w-[1600px] mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
-          <div className="w-full lg:w-1/2 aspect-4/5 bg-[#f5efe4] rounded-[40px] overflow-hidden relative shadow-sm">
-            <Image src="/imgs/about/who we are.jpg" alt="Lab Work" fill className="object-cover" />
+          <div className="w-full lg:w-1/2 aspect-4/5 bg-[#f5efe4] rounded-[40px] border-[#d3b582] border-2 overflow-hidden relative shadow-sm">
+            <Image src="/assets/abstract_2.jpg" alt="Lab Work" fill className="object-cover" />
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-6 text-left">
             <h2 className="text-3xl md:text-5xl font-medium text-black">Who We Are</h2>
@@ -120,8 +122,8 @@ export default function FrameAbout() {
                 Speed matters only when results are defensible. Repeatable workflows. Explicit controls. Reporting built to hold up under scrutiny.
               </p>
             </div>
-            <div className="w-full lg:w-1/2 aspect-4/5 bg-[#eef2f2] rounded-[40px] overflow-hidden relative shadow-sm">
-              <Image src="/imgs/about/operating philosophy.jpg" alt="Strategy" fill className="object-cover" />
+            <div className="w-full lg:w-1/2 aspect-4/5 bg-[#eef2f2] rounded-[40px] border-[#d3b582] border-2 overflow-hidden relative shadow-sm">
+              <Image src="/assets/abstract_1.jpg" alt="Strategy" fill className="object-cover" />
             </div>
           </div>
 

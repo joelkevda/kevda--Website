@@ -64,7 +64,7 @@ export function FourPillars() {
       ref={targetRef} 
       className="relative md:h-[600vh] py-20 md:py-0 bg-white"
     >
-      <div className="md:sticky top-0 md:h-screen flex flex-col justify-center overflow-hidden">
+      <div className="md:sticky top-0 md:h-screen flex flex-col justify-center overflow-visible">
         <div className="w-full max-w-[1600px] mx-auto mb-12 md:mb-8 px-6 md:px-10 lg:px-16 shrink-0">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-medium text-black">
             Four pillars. One execution system.

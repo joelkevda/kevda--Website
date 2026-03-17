@@ -54,13 +54,13 @@ export function UnifiedCTA({
           <div className="w-full lg:w-2/5 flex flex-col items-center lg:items-end gap-6 justify-center">
             <Link
               href={primaryButtonHref}
-              className="bg-[#d3b582] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-black rounded-full px-8 py-4 sm:px-10 sm:py-6 w-full max-w-[360px] flex justify-center items-center gap-4 text-base sm:text-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:brightness-110 active:scale-[0.98] font-medium text-center z-20 cursor-pointer"
+              className="bg-[#d3b582] w-full sm:w-auto text-black rounded-full px-8 py-4 sm:px-10 sm:py-6 max-w-[360px] flex justify-center items-center gap-4 text-base sm:text-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:brightness-110 active:scale-[0.98] font-medium text-center z-20 cursor-pointer whitespace-normal"
             >
               {primaryButtonText}
             </Link>
             <Link
               href={secondaryButtonHref}
-              className="bg-[#084d43] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-white rounded-full px-8 py-4 sm:px-10 sm:py-6 w-full max-w-[360px] flex justify-center items-center gap-4 text-base sm:text-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:brightness-110 active:scale-[0.98] font-medium text-center z-20 cursor-pointer"
+              className="bg-[#084d43] w-full sm:w-auto text-white rounded-full px-8 py-4 sm:px-10 sm:py-6 max-w-[360px] flex justify-center items-center gap-4 text-base sm:text-lg transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl hover:brightness-110 active:scale-[0.98] font-medium text-center z-20 cursor-pointer whitespace-normal"
             >
               {secondaryButtonText}
             </Link>

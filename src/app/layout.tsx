@@ -10,9 +10,21 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Kevda Bioworks | Integrated mRNA Development",
-  description:
-    "Kevda Bioworks is a premium wet-lab CRO supporting biotech and biopharma teams across molecular biology, cell-based assays, protein characterization, and mRNA/LNP delivery.",
+  title: {
+    default: "Kevda Bioworks | Integrated mRNA Development",
+    template: "%s | Kevda Bioworks",
+  },
+  description: "End-to-end wet-lab execution for biotech and biopharma — combining scientific leadership with operational rigor in Molecular Biology, Cell Engineering, and RNA platforms.",
+  keywords: ["mRNA", "Biotech", "Molecular Biology", "Cell Engineering", "Vector Engineering", "RNA Delivery", "Preclinical Execution"],
+  authors: [{ name: "Kevda Bioworks" }],
+  openGraph: {
+    title: "Kevda Bioworks | Integrated mRNA Development",
+    description: "End-to-end wet-lab execution for biotech and biopharma.",
+    url: "https://kevdabioworks.com",
+    siteName: "Kevda Bioworks",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 import { Header } from "@/components/sections/Header";

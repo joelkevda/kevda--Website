@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "motion/react";
 import React from "react";
 import Image from "next/image";
@@ -19,7 +20,7 @@ export default function FrameSecurity() {
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, margin: "-100px" }}
-  transition={{ duration: 0.8, ease: "easeOut" }} id="security-hero" className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center pb-16 px-6 md:px-10 lg:px-16 overflow-hidden bg-white">
+  transition={{ duration: 0.8, ease: "easeOut" }} id="security-hero" className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center pb-16 px-6 md:px-10 lg:px-16 bg-white overflow-visible">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,7 +51,7 @@ export default function FrameSecurity() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4"
           >
-            <button className="bg-[#d3b582] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-nowrap transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer">
+            <button className="bg-[#d3b582] w-full sm:w-auto text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer text-center whitespace-normal">
               Start a Confidential Discussion
             </button>
           </motion.div>
@@ -66,12 +67,12 @@ export default function FrameSecurity() {
         </motion.div>
 
         {/* Background Graphic */}
-        <div className="relative md:absolute md:inset-0 pointer-events-none opacity-80 overflow-hidden w-full h-[400px] md:h-full order-2 md:order-0 mt-12 md:mt-0">
+        <div className="relative md:absolute md:inset-0 pointer-events-none opacity-80 w-full h-[400px] md:h-full order-2 md:order-0 mt-12 md:mt-0">
           <Image 
             src="/assets/Security.png" 
             alt="Security Background Graphic"
             fill
-            className="object-contain md:object-cover -ml-12 md:ml-0 md:pl-180"
+            className="object-contain md:object-cover -ml-12 md:ml-0 md:pl-40 lg:pl-90 xl:pl-180"
             priority
           />
         </div>

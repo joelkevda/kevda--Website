@@ -1,3 +1,4 @@
+"use client";
 import React, { Suspense } from "react";
 import Spline from "@splinetool/react-spline";
 import Image from "next/image";
@@ -5,6 +6,7 @@ import { ArrowDown, Zap, LucideProps } from "lucide-react";
 import { UnifiedCTA } from "@/components/sections/UnifiedCTA";
 import { SideNavItem } from "@/components/sections/SideNav";
 import { PageWrapper } from "@/components/layout/PageWrapper";
+import Link from "next/link";
 
 interface WorkflowStep {
   title: string;
@@ -147,7 +149,7 @@ export const CapabilityTemplate: React.FC<CapabilityProps> = ({
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, margin: "-100px" }}
-  transition={{ duration: 0.8, ease: "easeOut" }} id={sideNavItems[0]?.sectionId} className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center pb-16 px-6 md:px-10 lg:px-16 overflow-hidden bg-white">
+  transition={{ duration: 0.8, ease: "easeOut" }} id={sideNavItems[0]?.sectionId} className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center pb-16 px-6 md:px-10 lg:px-16 bg-white overflow-visible">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -178,12 +180,12 @@ export const CapabilityTemplate: React.FC<CapabilityProps> = ({
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4"
           >
-            <button className="bg-[#d3b582] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-nowrap transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer">
+            <Link href="/contact" className="bg-[#d3b582] w-full sm:w-auto text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer flex items-center justify-center text-center whitespace-normal">
               Start a Confidential Discussion
-            </button>
-            <button className="bg-[#084d43] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-nowrap transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer">
+            </Link>
+            <Link href="/contact" className="bg-[#084d43] w-full sm:w-auto text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer flex items-center justify-center text-center whitespace-normal">
               {secondaryButtonText}
-            </button>
+            </Link>
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
@@ -196,12 +198,12 @@ export const CapabilityTemplate: React.FC<CapabilityProps> = ({
           </motion.div>
         </motion.div>
 
-        <div className="relative md:absolute md:inset-0 pointer-events-none opacity-80 overflow-hidden bg-white w-full h-[400px] md:h-full order-2 md:order-0 mt-12 md:mt-0">
+        <div className="relative md:absolute md:inset-0 pointer-events-none opacity-80 bg-white w-full h-[400px] md:h-full order-2 md:order-0 mt-12 md:mt-0">
           {splineScene ? (
             <Suspense fallback={<div className="w-full h-full bg-white transition-opacity duration-500" />}>
               <Spline 
                 scene={splineScene} 
-                className="w-full h-full object-cover md:pl-140 md:scale-120"
+                className="w-full h-full object-cover md:pl-40 lg:pl-80 xl:pl-140 md:scale-105 lg:scale-115 xl:scale-120"
               />
             </Suspense>
           ) : (

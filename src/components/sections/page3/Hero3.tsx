@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export function Hero3() {
   return (
@@ -10,9 +11,9 @@ export function Hero3() {
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, margin: "-100px" }}
-  transition={{ duration: 0.8, ease: "easeOut" }} className="relative w-full min-h-screen flex items-center  pb-16 px-6 md:px-10 lg:px-16 overflow-hidden bg-white">
+  transition={{ duration: 0.8, ease: "easeOut" }} className="relative w-full min-h-screen flex items-center  pb-16 px-6 md:px-10 lg:px-16 bg-white overflow-visible">
       {/* Background Graphic */}
-      <div className="absolute inset-0 pointer-events-none opacity-60 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none opacity-60">
         <Image
           src="/assets/430447ba7d13ef5f78f602ef48a9df820f8b829b.png"
           alt="DNA Background"
@@ -35,12 +36,12 @@ export function Hero3() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4">
-          <button className="bg-[#d3b582] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-normal sm:whitespace-nowrap backdrop-blur-md transition-transform hover:scale-105">
+          <Link href="/contact" className="bg-[#d3b582] w-full sm:w-auto text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-transform hover:scale-105 flex items-center justify-center text-center whitespace-normal">
             Start a Confidential Discussion
-          </button>
-          <button className="bg-[#084d43] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-normal sm:whitespace-nowrap backdrop-blur-md transition-transform hover:scale-105">
+          </Link>
+          <Link href="/contact" className="bg-[#084d43] w-full sm:w-auto text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-transform hover:scale-105 flex items-center justify-center text-center whitespace-normal">
             Discuss a Molecular Biology Scope
-          </button>
+          </Link>
         </div>
         <div className="flex items-center gap-2 bg-[#e3d5b8] w-fit px-3 py-1 rounded-lg mt-2">
           <span className="text-xs text-[#6e4515]">

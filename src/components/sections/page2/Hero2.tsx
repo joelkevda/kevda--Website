@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import React, { Suspense } from "react";
 import Spline from "@splinetool/react-spline";
 import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 export function Hero2() {
   return (
@@ -9,7 +10,7 @@ export function Hero2() {
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true, margin: "-100px" }}
-  transition={{ duration: 0.8, ease: "easeOut" }} className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center pb-16 px-6 md:px-10 lg:px-16 overflow-hidden bg-white">
+  transition={{ duration: 0.8, ease: "easeOut" }} className="relative w-full min-h-screen flex flex-col md:flex-row md:items-center pb-16 px-6 md:px-10 lg:px-16 bg-white overflow-visible">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -43,12 +44,12 @@ export function Hero2() {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4"
         >
-          <button className="bg-[#d3b582] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-normal sm:whitespace-nowrap backdrop-blur-md transition-transform hover:scale-105">
+          <Link href="/contact" className="bg-[#d3b582] w-full sm:w-auto text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.05] flex items-center justify-center text-center whitespace-normal">
             Start a Confidential Discussion
-          </button>
-          <button className="bg-[#084d43] w-full sm:w-auto whitespace-normal sm:whitespace-nowrap text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal whitespace-normal sm:whitespace-nowrap backdrop-blur-md transition-transform hover:scale-105">
+          </Link>
+          <Link href="/contact" className="bg-[#084d43] w-full sm:w-auto text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.05] flex items-center justify-center text-center whitespace-normal">
             Request a Scope Proposal
-          </button>
+          </Link>
         </motion.div>
         <motion.div 
           initial={{ opacity: 0, y: 10 }}
@@ -63,11 +64,11 @@ export function Hero2() {
       </motion.div>
 
       {/* Background Graphic */}
-      <div className="relative md:absolute md:inset-0 pointer-events-none opacity-80 overflow-hidden w-full h-[400px] md:h-full order-2 md:order-0 mt-12 md:mt-0">
+      <div className="relative md:absolute md:inset-0 pointer-events-none opacity-80 w-full h-[400px] md:h-full order-2 md:order-0 mt-12 md:mt-0">
         <Suspense fallback={<div className="w-full h-full bg-white" />}>
           <Spline 
             scene="/spline/capabilities.splinecode" 
-            className="w-full h-full object-cover md:pl-100"
+            className="w-full h-full object-cover md:pl-40 lg:pl-80 xl:pl-100"
           />
         </Suspense>
       </div>
