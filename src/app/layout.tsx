@@ -29,6 +29,7 @@ export const metadata: Metadata = {
 
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
+import { SiteLoader } from "@/components/layout/SiteLoader";
 
 export default function RootLayout({
   children,
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${spaceGrotesk.variable} antialiased font-space-grotesk`} suppressHydrationWarning>
+        <SiteLoader />
         <div className="flex flex-col min-h-screen relative">
           <Header />
           <main className="grow w-full">
