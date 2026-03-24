@@ -8,10 +8,45 @@ import { motion, AnimatePresence } from "motion/react";
 
 export default function FrameContact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          title: formData.get("title"),
+          company: formData.get("company"),
+          email: formData.get("email"),
+          serviceInterest: formData.get("serviceInterest"),
+          targetTimeline: formData.get("targetTimeline"),
+          message: formData.get("message"),
+          ndaRequested: formData.get("ndaRequested") === "on",
+        }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Something went wrong");
+      }
+
+      setIsSubmitted(true);
+      form.reset();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   const sideNavItems = [
     { label: "Intro", sectionId: "contact-hero" },
@@ -68,35 +103,39 @@ export default function FrameContact() {
                onSubmit={handleSubmit}
              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                   <input type="text" placeholder="Name" required className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
-                   <input type="text" placeholder="Title" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
+                   <input type="text" name="name" placeholder="Name" required className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
+                   <input type="text" name="title" placeholder="Title" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
                 </div>
-                <input type="text" placeholder="Company" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-4 outline-none border-none text-gray-700" />
-                <input type="email" placeholder="Email" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-4 outline-none border-none text-gray-700" />
+                <input type="text" name="company" placeholder="Company" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-4 outline-none border-none text-gray-700" />
+                <input type="email" name="email" placeholder="Email" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-4 outline-none border-none text-gray-700" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                    <div className="relative">
-                      <select required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700 appearance-none cursor-pointer">
-                         <option value="" disabled selected>Service Interest</option>
-                         <option value="molecular-biology">Molecular Biology</option>
-                         <option value="cell-engineering">Cell Engineering</option>
-                         <option value="protein-characterization">Protein Characterization</option>
-                         <option value="rna-delivery">RNA & Delivery</option>
+                      <select name="serviceInterest" required defaultValue="" className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700 appearance-none cursor-pointer">
+                         <option value="" disabled>Service Interest</option>
+                         <option value="Molecular Biology">Molecular Biology</option>
+                         <option value="Cell Engineering">Cell Engineering</option>
+                         <option value="Protein Characterization">Protein Characterization</option>
+                         <option value="RNA & Delivery">RNA & Delivery</option>
                       </select>
                       <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
                          <Zap size={16} />
                       </div>
                    </div>
-                   <input type="text" placeholder="Target Timeline" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
+                   <input type="text" name="targetTimeline" placeholder="Target Timeline" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
                 </div>
-                <textarea placeholder="Message" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-8 outline-none border-none text-gray-700 h-[250px] resize-none"></textarea>
-                
+                <textarea name="message" placeholder="Message" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-8 outline-none border-none text-gray-700 h-[250px] resize-none"></textarea>
+
                 <div className="flex items-center gap-4 mb-12">
-                   <input type="checkbox" id="nda-request" className="w-5 h-5 accent-[#084d43]" />
+                   <input type="checkbox" name="ndaRequested" id="nda-request" className="w-5 h-5 accent-[#084d43]" />
                    <label htmlFor="nda-request" className="text-sm text-gray-400 cursor-pointer">Request NDA before sharing program details</label>
                 </div>
 
-                <button type="submit" className="bg-[#d3b582] w-full sm:w-auto text-white px-12 py-4 rounded-full font-medium transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer text-center whitespace-normal">
-                  Start a Confidential Discussion
+                {error && (
+                  <p className="text-red-500 text-sm mb-4">{error}</p>
+                )}
+
+                <button type="submit" disabled={isSubmitting} className="bg-[#d3b582] w-full sm:w-auto text-white px-12 py-4 rounded-full font-medium transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer text-center whitespace-normal disabled:opacity-50 disabled:cursor-not-allowed">
+                  {isSubmitting ? "Sending..." : "Start a Confidential Discussion"}
                 </button>
              </motion.form>
            ) : (
