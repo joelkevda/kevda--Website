@@ -17,7 +17,7 @@ export default function FrameLeadership() {
   const leaders = [
     {
       name: "Joel Deutsch",
-      title: "Co-Founder & CEO",
+      title: "Founder & CEO",
       bio: "Joel Deutsch leads Kevda Bioworks, drawing on nearly a decade of operations leadership at F5 Hiring Solutions. He oversees strategy, hiring, infrastructure, vendor management, and day-to-day execution — ensuring reliable timelines, structured communication, and disciplined delivery.",
       image: "/assets/Joel.jpeg"
     },
