@@ -15,16 +15,16 @@ export default function FrameLeadership() {
 
   const leaders = [
     {
-      name: "Aaron Larsen",
+      name: "Joel Deutsch",
       title: "Co-Founder & CEO",
-      bio: "Aaron Larsen is a scientist-operator with academic and industry experience across molecular biology and RNA platforms. He completed postdoctoral research at Harvard University and contributed across leading biotech platforms including Moderna and Beam Therapeutics, supporting RNA programs, delivery systems, analytical workflows, and manufacturing-relevant execution.",
-      image: "/assets/Aaron.jpeg"
+      bio: "Joel Deutsch leads Kevda Bioworks, drawing on nearly a decade of operations leadership at F5 Hiring Solutions. He oversees strategy, hiring, infrastructure, vendor management, and day-to-day execution — ensuring reliable timelines, structured communication, and disciplined delivery.",
+      image: "/assets/Joel.jpeg"
     },
     {
-      name: "Joel Deutsch",
-      title: "Co-Founder & COO",
-      bio: "Joel Deutsch leads operations and execution delivery. He oversees hiring, infrastructure, vendor management, budgeting, and day-to-day project management — ensuring reliable timelines, structured communication, and disciplined execution.",
-      image: "/assets/Joel.jpeg"
+      name: "Aaron Larsen",
+      title: "Senior Strategic Advisor",
+      bio: "Aaron Larsen advises Kevda on scientific direction and execution standards. He brings deep experience from world's leading biotech companies and research universities — with focus on molecular biology, RNA platforms, delivery systems, and analytical workflows.",
+      image: "/assets/Aaron.jpeg"
     }
   ];
 
