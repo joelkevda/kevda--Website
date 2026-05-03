@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { UnifiedCTA } from "@/components/sections/UnifiedCTA";
@@ -7,6 +7,7 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { motion } from "motion/react";
 
 export default function FrameLeadership() {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const sideNavItems = [
     { label: "Intro", sectionId: "leadership-hero" },
     { label: "Team", sectionId: "leadership-team" },
@@ -16,7 +17,7 @@ export default function FrameLeadership() {
   const leaders = [
     {
       name: "Joel Deutsch",
-      title: "Co-Founder & CEO",
+      title: "Founder & CEO",
       bio: "Joel Deutsch leads Kevda Bioworks, drawing on nearly a decade of operations leadership at F5 Hiring Solutions. He oversees strategy, hiring, infrastructure, vendor management, and day-to-day execution — ensuring reliable timelines, structured communication, and disciplined delivery.",
       image: "/assets/Joel.jpeg"
     },
@@ -78,7 +79,10 @@ export default function FrameLeadership() {
                       {leader.bio}
                    </p>
                 </div>
-                <div className="w-full lg:w-[500px] aspect-square relative rounded-[40px] overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000 shadow-xl">
+                <div
+                  onClick={() => setActiveIndex(activeIndex === i ? null : i)}
+                  className={`w-full lg:w-[500px] aspect-square relative rounded-[40px] overflow-hidden ${activeIndex === i ? "" : "grayscale"} hover:grayscale-0 transition-all duration-1000 shadow-xl cursor-pointer`}
+                >
                    <Image 
                      src={leader.image} 
                      alt={leader.name} 
