@@ -5,14 +5,14 @@ import { motion } from "motion/react";
 
 const leaders = [
   {
-    name: "Aaron Larsen",
-    role: "leads scientific direction and execution quality.",
-    img: "/assets/Aaron.jpeg",
+    name: "Joel Deutsch",
+    role: "leads Kevda's strategy and operations.",
+    img: "/assets/Joel.jpeg",
   },
   {
-    name: "Joel Deutsch",
-    role: "leads operations, infrastructure, and delivery reliability.",
-    img: "/assets/Joel.jpeg",
+    name: "Aaron Larsen",
+    role: "advises on scientific direction and execution quality.",
+    img: "/assets/Aaron.jpeg",
   },
 ];
 
