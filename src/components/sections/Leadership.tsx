@@ -6,11 +6,13 @@ import { motion } from "motion/react";
 const leaders = [
   {
     name: "Joel Deutsch",
+    title: "Founder & CEO",
     role: "leads Kevda's strategy and operations.",
     img: "/assets/Joel.jpeg",
   },
   {
     name: "Aaron Larsen",
+    title: "Senior Strategic Advisor",
     role: "advises on scientific direction and execution quality.",
     img: "/assets/Aaron.jpeg",
   },
@@ -52,14 +54,19 @@ export function Leadership() {
                 </div>
               </div>
 
-              {/* Name pill + description */}
-              <div className="bg-[#f7f6f7] rounded-full flex items-center gap-3 px-2 py-2 w-full">
+              {/* Name pill + title + description */}
+              <div className="bg-[#f7f6f7] rounded-3xl flex items-center gap-3 px-2 py-2 w-full">
                 <span className="bg-[#d3b582] text-black rounded-full px-4 py-2 text-base font-normal backdrop-blur-md shrink-0 text-center whitespace-normal">
                   {leader.name}
                 </span>
-                <p className="text-[#5e5e5e] font-normal text-sm md:text-base leading-snug flex-1">
-                  {leader.role}
-                </p>
+                <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                  <span className="text-black/90 font-medium text-sm md:text-base leading-snug">
+                    {leader.title}
+                  </span>
+                  <p className="text-[#5e5e5e] font-normal text-sm md:text-base leading-snug">
+                    {leader.role}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
