@@ -48,6 +48,7 @@ export default function FrameRNA() {
       outputPoints={outputPoints}
       outputCards={outputCards}
       sideNavItems={sideNavItems}
+      secondaryButtonText="Discuss an mRNA/LNP Scope"
     />
   );
 }

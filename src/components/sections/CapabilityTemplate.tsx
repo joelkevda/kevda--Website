@@ -139,7 +139,7 @@ export const CapabilityTemplate: React.FC<CapabilityProps> = ({
   outputPoints,
   outputCards,
   sideNavItems,
-  secondaryButtonText = "Initiate a Project",
+  secondaryButtonText = "Start a Confidential Discussion",
 }) => {
   const [isSplineLoaded, setIsSplineLoaded] = React.useState(!splineScene);
 

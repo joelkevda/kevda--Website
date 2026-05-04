@@ -51,7 +51,7 @@ export default function FrameLeadership() {
                   Start a Confidential Discussion
                 </Link>
                 <Link href="/contact" className="bg-[#084d43] w-full sm:w-auto text-white px-6 md:px-10 py-3 md:py-4 rounded-full font-medium hover:scale-105 transition-transform flex items-center justify-center text-center whitespace-normal">
-                  Initiate a Project
+                  Start a Confidential Discussion
                 </Link>
           </div>
           <div className="flex items-center gap-2 mt-2">
@@ -99,7 +99,7 @@ export default function FrameLeadership() {
       </motion.section>
 
       <div id="leadership-contact">
-        <UnifiedCTA secondaryButtonText="Initiate a Project" />
+        <UnifiedCTA secondaryButtonText="Start a Confidential Discussion" />
       </div>
     </PageWrapper>
   );

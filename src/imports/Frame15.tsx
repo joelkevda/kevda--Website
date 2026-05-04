@@ -49,6 +49,7 @@ export default function Frame15() {
       outputPoints={outputPoints}
       outputCards={outputCards}
       sideNavItems={sideNavItems}
+      secondaryButtonText="Discuss a Molecular Biology Scope"
     />
   );
 }

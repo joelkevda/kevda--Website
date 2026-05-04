@@ -49,6 +49,7 @@ export default function FrameCell() {
       outputPoints={outputPoints}
       outputCards={outputCards}
       sideNavItems={sideNavItems}
+      secondaryButtonText="Talk to a Scientist"
     />
   );
 }
