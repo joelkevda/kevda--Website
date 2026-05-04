@@ -6,6 +6,8 @@ import { PageWrapper } from "@/components/layout/PageWrapper";
 import { SideNavItem } from "@/components/sections/SideNav";
 import Marquee from "@/components/Marquee";
 import ScrollReveal from "@/components/ScrollReveal";
+import CountUp from "@/components/CountUp";
+import ShaderBackground from "@/components/ShaderBackground";
 
 const sideNavItems: SideNavItem[] = [
   { label: "Intro", sectionId: "section-hero" },
@@ -15,11 +17,12 @@ const sideNavItems: SideNavItem[] = [
   { label: "Contact", sectionId: "section-contact" },
 ];
 
-const stats = [
-  { num: "4", label: "Core Capability Pillars" },
+type Stat = { label: string; num?: string; count?: number };
+const stats: Stat[] = [
+  { count: 4, label: "Core Capability Pillars" },
   { num: "PhD", label: "Scientific Leadership" },
   { num: "Net 30", label: "Payment Terms" },
-  { num: "2", label: "Global Locations" },
+  { count: 2, label: "Global Locations" },
 ];
 
 const capabilities = [
@@ -108,10 +111,12 @@ export default function Page1() {
       {/* ── STATS STRIP ── */}
       <section className="kv-stats">
         <div className="kv-stats-grid">
-          {stats.map(({ num, label }) => (
-            <div key={label} className="kv-stat-item">
-              <div className="kv-stat-num">{num}</div>
-              <div className="kv-stat-label">{label}</div>
+          {stats.map(stat => (
+            <div key={stat.label} className="kv-stat-item">
+              <div className="kv-stat-num">
+                {typeof stat.count === "number" ? <CountUp to={stat.count} /> : stat.num}
+              </div>
+              <div className="kv-stat-label">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -176,6 +181,7 @@ export default function Page1() {
 
       {/* ── KEVDA ADVANTAGE ── */}
       <section id="section-advantage" className="kv-adv">
+        <ShaderBackground />
         <div className="kv-container">
           <ScrollReveal delay={0}>
             <div className="kv-eyebrow">

@@ -3,6 +3,7 @@ import Spline from "@splinetool/react-spline";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
+import WordReveal from "@/components/WordReveal";
 
 export function Hero() {
   const [isSplineLoaded, setIsSplineLoaded] = React.useState(false);
@@ -21,8 +22,8 @@ export function Hero() {
         className="relative z-10 w-full max-w-3xl flex flex-col gap-8 md:gap-4 mt-24 md:mt-0 order-1"
       >
         <h1 className="text-[28px] sm:text-4xl lg:text-5xl leading-[1.1] font-medium text-black wrap-break-word">
-          Integrated mRNA Development.<br/>
-          Built for Preclinical Execution.
+          <WordReveal as="span" text="Integrated mRNA Development." trigger="load" className="block" />
+          <WordReveal as="span" text="Built for Preclinical Execution." trigger="load" delay={0.4} className="block" />
         </h1>
         
         <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl">

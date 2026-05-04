@@ -40,6 +40,7 @@ export const metadata: Metadata = {
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
 import { SiteLoader } from "@/components/layout/SiteLoader";
+import ScrollProgress from "@/components/ScrollProgress";
 
 export default function RootLayout({
   children,
@@ -64,6 +65,7 @@ export default function RootLayout({
       </head>
       <body className={`${spaceGrotesk.variable} antialiased font-space-grotesk`} suppressHydrationWarning>
         <SiteLoader />
+        <ScrollProgress />
         <div className="flex flex-col min-h-screen relative">
           <Header />
           <main className="grow w-full">
