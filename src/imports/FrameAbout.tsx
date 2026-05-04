@@ -7,7 +7,7 @@ import Link from "next/link";
 import { ArrowDown } from "lucide-react";
 import { UnifiedCTA } from "@/components/sections/UnifiedCTA";
 import { PageWrapper } from "@/components/layout/PageWrapper";
-import WorldMap from "@/components/WorldMap";
+import { GlobalFootprint } from "@/components/GlobalFootprint";
 
 export default function FrameAbout() {
   const [isSplineLoaded, setIsSplineLoaded] = React.useState(false);
@@ -166,19 +166,9 @@ export default function FrameAbout() {
       </motion.section>
 
       {/* Footprint */}
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8, ease: "easeOut" }} 
-        id="about-footprint" 
-        className="bg-white w-full py-20 md:py-32 px-6 md:px-10 lg:px-16 relative z-10 flex flex-col items-center group"
-      >
-        <div className="w-full max-w-[1600px] flex flex-col items-center gap-16">
-          <h2 className="text-3xl md:text-6xl font-medium text-black text-center">Footprint</h2>
-          <WorldMap />
-        </div>
-      </motion.section>
+      <div id="about-footprint">
+        <GlobalFootprint />
+      </div>
 
       <div id="about-contact">
         <UnifiedCTA 
