@@ -37,6 +37,9 @@ export default function FrameQuality() {
           </h1>
           
           <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl">
+            Quality at Kevda is not a separate function. It is built into how every scope is designed, how every experiment is run, and how every deliverable is documented.
+          </p>
+          <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl">
             Disciplined execution, explicit controls, and structured documentation designed to stand up to scientific and investor scrutiny.
           </p>
 

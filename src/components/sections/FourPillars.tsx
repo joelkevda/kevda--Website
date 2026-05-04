@@ -100,7 +100,7 @@ function PillarCardMobile({ pillar, index }: { pillar: Pillar; index: number }) 
         <div className="w-full bg-[#eeeeee] rounded-xl px-6 py-3 flex items-center justify-between min-h-[56px]">
           <span className="text-black/60 font-medium text-lg">{pillar.id}</span>
           <div className="flex items-center gap-3">
-            <span className="text-black/80 font-medium text-base group-hover/card:text-[#084d43] transition-colors">Explore →</span>
+            <span className="text-black/80 font-medium text-base group-hover/card:text-[#084d43] transition-colors">Visit</span>
             <ArrowUpRight className="w-5 h-5 text-black/40 transform group-hover/card:translate-x-1 group-hover/card:-translate-y-1 group-hover/card:text-[#084d43] transition-all" />
           </div>
         </div>
@@ -185,7 +185,7 @@ function PillarCard({ pillar, index, scrollYProgress }: { pillar: Pillar; index:
         >
           <span className="text-black/60 font-medium text-lg">{pillar.id}</span>
           <div className="flex items-center gap-3">
-            <span className="text-black/80 font-medium text-base group-hover/card:text-[#084d43] transition-colors">Explore →</span>
+            <span className="text-black/80 font-medium text-base group-hover/card:text-[#084d43] transition-colors">Visit</span>
             <ArrowUpRight className="w-5 h-5 text-black/40 transform group-hover/card:translate-x-1 group-hover/card:-translate-y-1 group-hover/card:text-[#084d43] transition-all" />
           </div>
         </motion.div>

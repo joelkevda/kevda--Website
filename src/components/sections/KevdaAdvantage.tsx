@@ -7,25 +7,25 @@ export function KevdaAdvantage() {
   const cards = [
     {
       title: "Scientific standards",
-      desc: "Shaped by leading research and platform biotech environments.",
+      desc: "Built from environments where the science has to hold.",
       bg: "bg-[#d4c29c]",
       img: "/imgs/index/Kevda advantage/scientific1.png",
     },
     {
       title: "Strategic efficiency",
-      desc: "Extend R&D runway without compromising data integrity.",
+      desc: "Extend runway. Protect data integrity.",
       bg: "bg-[#d4c29c]",
       img: "/imgs/index/Kevda advantage/strategic1.png",
     },
     {
       title: "QC-forward reporting",
-      desc: "Structured outputs built for internal and investor review.",
+      desc: "Every output structured for internal and investor scrutiny.",
       bg: "bg-[#d4c29c]",
       img: "/imgs/index/Kevda advantage/qc1.png",
     },
     {
       title: "End-to-end logistics",
-      desc: "Procurement through reporting managed seamlessly.",
+      desc: "Procurement to reporting. One point of contact.",
       bg: "bg-[#d4c29c]",
       img: "/imgs/index/Kevda advantage/end1.png",
     },

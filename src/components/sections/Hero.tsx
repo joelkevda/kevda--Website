@@ -26,7 +26,7 @@ export function Hero() {
         </h1>
         
         <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl">
-          Kevda Bioworks is a premium wet-lab CRO supporting biotech and biopharma teams across molecular biology, cell-based assays, protein characterization, and mRNA/LNP delivery.
+          Precision wet-lab execution for teams building toward preclinical proof of concept. Scope-controlled, QC-documented, review-ready.
         </p>
 
         <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl whitespace-pre-wrap">

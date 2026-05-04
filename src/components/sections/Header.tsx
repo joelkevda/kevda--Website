@@ -1,6 +1,6 @@
 
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
@@ -9,6 +9,12 @@ import { ChevronDown } from "lucide-react";
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isCapabilitiesOpen, setIsCapabilitiesOpen] = React.useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const handler = () => setScrolled(window.scrollY > 60);
+    window.addEventListener('scroll', handler, { passive: true });
+    return () => window.removeEventListener('scroll', handler);
+  }, []);
 
   const capabilities = [
     { label: "Overview", href: "/capabilities" },
@@ -20,8 +26,12 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 py-4 px-4 md:px-8 xl:px-16 flex items-center justify-between bg-white/80 backdrop-blur-md border-b border-gray-100/50 transition-all duration-300">
-        <Link href="/" className="flex items-center gap-2 lg:gap-3 group">
+      <header className={`fixed top-0 left-0 w-full z-50 py-4 px-4 md:px-8 xl:px-16 flex items-center justify-between transition-all duration-300 ${
+        scrolled
+          ? 'bg-white/95 backdrop-blur-xl shadow-sm border-b border-black/5'
+          : 'bg-transparent'
+      }`}>
+        <Link href="/" aria-label="Kevda Bioworks — Home" className="flex items-center gap-2 lg:gap-3 group">
           <div className="relative w-10 h-10 lg:w-12 lg:h-12 overflow-hidden bg-cover">
             <Image src="/assets/799bf25d4a8cf43f03f498d4978b69fb6a4059a1.png" alt="Logo" fill className="object-cover" />
           </div>
@@ -63,8 +73,9 @@ export function Header() {
             </AnimatePresence>
           </div>
 
-          <Link 
-            href="/contact" 
+          <Link
+            href="/contact"
+            aria-label="Start a Confidential Discussion"
             className="hidden md:block bg-[#d3b582] text-white px-6 py-3 rounded-full text-sm lg:text-base font-medium transition-all duration-300 hover:scale-[1.05] hover:shadow-lg cursor-pointer text-center whitespace-normal"
           >
             Start a Confidential Discussion

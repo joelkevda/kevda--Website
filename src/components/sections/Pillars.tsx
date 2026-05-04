@@ -35,14 +35,14 @@ export function Pillars() {
                <div className="relative w-16 h-16 md:w-20 md:h-20">
                  <Image src="/imgs/security/nda.png" alt="QC Docs Icon" fill className="object-contain" />
                </div>
-               <p className="text-[#666] text-lg md:text-xl font-medium leading-tight">QC and CoA-style documentation (where applicable)</p>
+               <p className="text-[#666] text-lg md:text-xl font-medium leading-tight">QC and CoA-style documentation</p>
             </div>
             {/* Card 4 */}
             <div className="bg-[#f7f7f7] rounded-xl p-5 md:p-6 flex flex-col items-start gap-4">
                <div className="relative w-16 h-16 md:w-20 md:h-20">
                  <Image src="/imgs/security/Delivery.png" alt="Logistics Icon" fill className="object-contain" />
                </div>
-               <p className="text-[#666] text-lg md:text-xl font-medium leading-tight">Turnkey execution from sequence to data</p>
+               <p className="text-[#666] text-lg md:text-xl font-medium leading-tight">Turnkey execution. Sequence to data.</p>
             </div>
           </div>
        </div>

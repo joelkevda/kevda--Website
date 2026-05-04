@@ -103,14 +103,14 @@ export default function FrameContact() {
                onSubmit={handleSubmit}
              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                   <input type="text" name="name" placeholder="Name" required className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
-                   <input type="text" name="title" placeholder="Title" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
+                   <input type="text" name="name" placeholder="Name" required aria-label="Your name" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
+                   <input type="text" name="title" placeholder="Title" aria-label="Job title" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
                 </div>
-                <input type="text" name="company" placeholder="Company" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-4 outline-none border-none text-gray-700" />
-                <input type="email" name="email" placeholder="Email" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-4 outline-none border-none text-gray-700" />
+                <input type="text" name="company" placeholder="Company" required aria-label="Company" className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-4 outline-none border-none text-gray-700" />
+                <input type="email" name="email" placeholder="Email" required aria-label="Email address" className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-4 outline-none border-none text-gray-700" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                    <div className="relative">
-                      <select name="serviceInterest" required defaultValue="" className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700 appearance-none cursor-pointer">
+                      <select name="serviceInterest" required defaultValue="" aria-label="Service interest" className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700 appearance-none cursor-pointer">
                          <option value="" disabled>Service Interest</option>
                          <option value="Molecular Biology">Molecular Biology</option>
                          <option value="Cell Engineering">Cell Engineering</option>
@@ -121,12 +121,12 @@ export default function FrameContact() {
                          <Zap size={16} />
                       </div>
                    </div>
-                   <input type="text" name="targetTimeline" placeholder="Target Timeline" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
+                   <input type="text" name="targetTimeline" placeholder="Target Timeline" aria-label="Target timeline" className="bg-[#f2f2f2] rounded-xl px-8 py-4 outline-none border-none text-gray-700" />
                 </div>
-                <textarea name="message" placeholder="Message" required className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-8 outline-none border-none text-gray-700 h-[250px] resize-none"></textarea>
+                <textarea name="message" placeholder="Message" required aria-label="Project description" className="w-full bg-[#f2f2f2] rounded-xl px-8 py-4 mb-8 outline-none border-none text-gray-700 h-[250px] resize-none"></textarea>
 
                 <div className="flex items-center gap-4 mb-12">
-                   <input type="checkbox" name="ndaRequested" id="nda-request" className="w-5 h-5 accent-[#084d43]" />
+                   <input type="checkbox" name="ndaRequested" id="nda-request" aria-label="Request NDA before discussion" className="w-5 h-5 accent-[#084d43]" />
                    <label htmlFor="nda-request" className="text-sm text-gray-400 cursor-pointer">Request NDA before sharing program details</label>
                 </div>
 

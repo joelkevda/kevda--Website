@@ -38,7 +38,7 @@ export default function FrameAbout() {
           </h1>
           
           <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl">
-            Kevda supports biotech and biopharma teams with end-to-end wet-lab execution — combining scientific leadership with operational rigor.
+            Built to execute the work that requires the most control.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4">
@@ -94,7 +94,7 @@ export default function FrameAbout() {
           <div className="w-full lg:w-1/2 flex flex-col gap-6 text-left">
             <h2 className="text-3xl md:text-5xl font-medium text-black">Who We Are</h2>
             <p className="text-lg md:text-xl font-normal text-black/70 leading-relaxed">
-             Kevda operates as an extension of client R&D teams, focused on execution-heavy work requiring tight process control.
+             Kevda operates as an embedded execution partner — not a transactional vendor. We take on the wet-lab work that requires process discipline, explicit controls, and reporting that holds up.
             </p>
           </div>
         </div>

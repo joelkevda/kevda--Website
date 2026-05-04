@@ -48,10 +48,10 @@ export default function FrameLeadership() {
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4">
                 <Link href="/contact" className="bg-[#d3b582] w-full sm:w-auto text-black px-6 md:px-10 py-3 md:py-4 rounded-full font-medium hover:scale-105 transition-transform flex items-center justify-center text-center whitespace-normal">
-                  Start a Confidential Discussion
+                  Explore Capabilities
                 </Link>
                 <Link href="/contact" className="bg-[#084d43] w-full sm:w-auto text-white px-6 md:px-10 py-3 md:py-4 rounded-full font-medium hover:scale-105 transition-transform flex items-center justify-center text-center whitespace-normal">
-                  Start a Confidential Discussion
+                  Explore Capabilities
                 </Link>
           </div>
           <div className="flex items-center gap-2 mt-2">
@@ -99,7 +99,7 @@ export default function FrameLeadership() {
       </motion.section>
 
       <div id="leadership-contact">
-        <UnifiedCTA secondaryButtonText="Start a Confidential Discussion" />
+        <UnifiedCTA secondaryButtonText="Explore Capabilities" />
       </div>
     </PageWrapper>
   );

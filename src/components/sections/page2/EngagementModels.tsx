@@ -6,9 +6,9 @@ import { motion } from "motion/react";
 
 export function EngagementModels() {
   const models: { title: string; desc: string; icon: string | React.ComponentType<LucideProps> }[] = [
-    { title: "Defined scope", desc: "Milestone-aligned delivery.", icon: "/imgs/capabilities/engagement model/discover.png" },
-    { title: "Pilot → scale", desc: "Validate, then expand capacity.", icon: "/imgs/capabilities/engagement model/pilot.png" },
-    { title: "Ongoing bandwidth", desc: "Retained execution support.", icon: "/imgs/capabilities/engagement model/ongoing.png" }
+    { title: "Defined scope", desc: "Fixed deliverables. Clear acceptance criteria.", icon: "/imgs/capabilities/engagement model/discover.png" },
+    { title: "Pilot → scale", desc: "Start small. Scale when it works.", icon: "/imgs/capabilities/engagement model/pilot.png" },
+    { title: "Ongoing bandwidth", desc: "Embedded capacity. Retained on your timeline.", icon: "/imgs/capabilities/engagement model/ongoing.png" }
   ];
 
   return (

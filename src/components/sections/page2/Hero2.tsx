@@ -27,8 +27,7 @@ export function Hero2() {
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl font-normal text-black w-full max-w-2xl">
-          Kevda focuses on execution-heavy wet-lab work so teams can reach
-          proof-of-concept milestones without expanding internal overhead.
+          Wet-lab execution so your team can focus on the science that requires your attention.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4">

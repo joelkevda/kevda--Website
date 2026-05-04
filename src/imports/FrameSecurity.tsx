@@ -35,6 +35,9 @@ export default function FrameSecurity() {
           </h1>
           
           <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl">
+            Sensitive sequences and unreported data are treated with the same discipline as the experiments themselves.
+          </p>
+          <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl">
             We treat sensitive sequences, programs, and experimental outcomes as a core operating responsibility.
           </p>
 
