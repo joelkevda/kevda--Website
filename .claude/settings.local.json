@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout *)",
+      "Bash(npm run *)",
+      "Bash(git stash *)",
+      "Bash(RESEND_API_KEY=re_placeholder_for_build_check npm run build)",
+      "Bash(grep -E \"FrameLeadership|sections.Leadership|sections\\\\\\\\\\\\\\\\Leadership\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(gh pr *)",
+      "Bash(git pull *)",
+      "Bash(grep -E \"grayscale|hover.{0,5}grayscale\" /c/Projects/kevda-website/.next/static/chunks/2699c2c088b3cb32.css)",
+      "Bash(grep -oE \"\\\\.grayscale[^\\\\}]{0,200}\" /c/Projects/kevda-website/.next/static/chunks/2699c2c088b3cb32.css)",
+      "Bash(grep -oE \"hover\\\\\\\\\\\\\\\\:grayscale-0[^\\\\}]{0,200}\" /c/Projects/kevda-website/.next/static/chunks/2699c2c088b3cb32.css)",
+      "Bash(grep -oE \"grayscale-0[^\\\\}]{0,250}\" /c/Projects/kevda-website/.next/static/chunks/2699c2c088b3cb32.css)",
+      "Bash(grep -oE \"[^,\\\\}]{0,80}grayscale-0[^\\\\}]{0,250}\" /c/Projects/kevda-website/.next/static/chunks/2699c2c088b3cb32.css)",
+      "Bash(grep -oE \"[^,\\\\{]{0,100}\\\\\\\\\\\\\\\\:grayscale-0:hover\" /c/Projects/kevda-website/.next/static/chunks/2699c2c088b3cb32.css)",
+      "PowerShell(Get-Content *)",
+      "mcp__claude_ai_Vercel__list_deployments",
+      "Bash(git ls-remote *)"
+    ]
+  }
+}
