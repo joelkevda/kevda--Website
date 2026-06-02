@@ -66,15 +66,22 @@ const sectionTitleStyle: React.CSSProperties = {
 function Field({
   label,
   hint,
+  required,
   children,
 }: {
   label: string;
   hint?: string;
+  required?: boolean;
   children: React.ReactNode;
 }) {
   return (
     <div style={fieldGap}>
-      <label style={labelStyle}>{label}</label>
+      <label style={labelStyle}>
+        {label}
+        {required ? (
+          <span style={{ color: "#C62828", marginLeft: "3px" }}>*</span>
+        ) : null}
+      </label>
       {hint ? <span style={hintStyle}>{hint}</span> : null}
       {children}
     </div>
@@ -185,6 +192,8 @@ export default function ApplyPage() {
               </p>
             </div>
 
+            <p style={{ fontSize: "12px", color: "#999", margin: "0" }}>* Required</p>
+
             {/* Form */}
             <form
               onSubmit={handleSubmit}
@@ -198,15 +207,15 @@ export default function ApplyPage() {
               {/* Your Information */}
               <h2 style={sectionTitleStyle}>Your Information</h2>
 
-              <Field label="Full name">
+              <Field label="Full name" required>
                 <input name="name" type="text" required style={inputStyle} />
               </Field>
 
-              <Field label="Email address">
+              <Field label="Email address" required>
                 <input name="email" type="email" required style={inputStyle} />
               </Field>
 
-              <Field label="Current role">
+              <Field label="Current role" required>
                 <input
                   name="currentRole"
                   type="text"
@@ -216,7 +225,7 @@ export default function ApplyPage() {
                 />
               </Field>
 
-              <Field label="Company">
+              <Field label="Company" required>
                 <input
                   name="company"
                   type="text"
@@ -226,7 +235,7 @@ export default function ApplyPage() {
                 />
               </Field>
 
-              <Field label="LinkedIn profile URL">
+              <Field label="LinkedIn profile URL" required>
                 <input
                   name="linkedin"
                   type="text"
@@ -236,7 +245,7 @@ export default function ApplyPage() {
                 />
               </Field>
 
-              <Field label="Location">
+              <Field label="Location" required>
                 <input
                   name="location"
                   type="text"
@@ -255,7 +264,7 @@ export default function ApplyPage() {
                 />
               </Field>
 
-              <Field label="Resume / CV upload">
+              <Field label="Resume / CV upload" required>
                 <input
                   name="resume"
                   type="file"
@@ -286,6 +295,7 @@ export default function ApplyPage() {
               <Field
                 label="Briefly describe your relevant background."
                 hint="Biotech, pharma, CRO/CDMO, life sciences services, or related commercial roles. 3–6 sentences."
+                required
               >
                 <textarea name="q5" required style={textareaStyle} />
               </Field>
@@ -293,6 +303,7 @@ export default function ApplyPage() {
               <Field
                 label="What existing relationships do you have with people who buy or influence outsourced research services?"
                 hint="For example: founders, CSOs, R&D leads, or procurement contacts at biotech startups, pharma groups, or venture-backed companies. If you don't have direct relationships, be honest — we are also open to candidates who know the space but are building their network."
+                required
               >
                 <textarea name="q6" required style={textareaStyle} />
               </Field>
@@ -300,17 +311,19 @@ export default function ApplyPage() {
               <Field
                 label="Give us one example of a client relationship you helped win, grow, or manage in a technical or scientific market."
                 hint="High-level is fine. We're looking for how you think about BD, not confidential details."
+                required
               >
                 <textarea name="q7" required style={textareaStyle} />
               </Field>
 
-              <Field label="This role is equity-based with no salary to start. What makes that structure realistic or attractive for you at this point in your career?">
+              <Field label="This role is equity-based with no salary to start. What makes that structure realistic or attractive for you at this point in your career?" required>
                 <textarea name="q8" required style={textareaStyle} />
               </Field>
 
               <Field
                 label="If you joined Kevda tomorrow, what would your first 90 days look like in terms of identifying and engaging potential clients?"
                 hint="5–10 bullets or a short paragraph."
+                required
               >
                 <textarea name="q9" required style={textareaStyle} />
               </Field>
