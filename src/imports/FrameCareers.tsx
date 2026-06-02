@@ -40,6 +40,9 @@ export default function FrameCareers() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4">
+            <Link href="/careers/apply" className="bg-[#084d43] w-full sm:w-auto text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer flex items-center justify-center text-center whitespace-normal">
+              Apply Now
+            </Link>
             <Link href="/contact" className="bg-[#d3b582] w-full sm:w-auto text-black px-6 md:px-8 py-3 md:py-4 rounded-full font-normal transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:brightness-110 active:scale-[0.98] cursor-pointer flex items-center justify-center text-center whitespace-normal">
               Contact Recruiting
             </Link>
