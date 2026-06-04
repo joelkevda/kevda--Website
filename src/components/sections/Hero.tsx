@@ -3,7 +3,6 @@ import Spline from "@splinetool/react-spline";
 import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
-import WordReveal from "@/components/WordReveal";
 
 export function Hero() {
   const [isSplineLoaded, setIsSplineLoaded] = React.useState(false);
@@ -22,12 +21,12 @@ export function Hero() {
         className="relative z-10 w-full max-w-3xl flex flex-col gap-8 md:gap-4 mt-24 md:mt-0 order-1"
       >
         <h1 className="text-[28px] sm:text-4xl lg:text-5xl leading-[1.1] font-medium text-black wrap-break-word">
-          <WordReveal as="span" text="Integrated mRNA Development." trigger="load" className="block" />
-          <WordReveal as="span" text="Built for Preclinical Execution." trigger="load" delay={0.4} className="block" />
+          Integrated mRNA Development.<br/>
+          Built for Preclinical Execution.
         </h1>
         
         <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl">
-          Precision wet-lab execution for teams building toward preclinical proof of concept. Scope-controlled, QC-documented, review-ready.
+          Kevda Bioworks is a premium wet-lab CRO supporting biotech and biopharma teams across molecular biology, cell-based assays, protein characterization, and mRNA/LNP delivery.
         </p>
 
         <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl whitespace-pre-wrap">
