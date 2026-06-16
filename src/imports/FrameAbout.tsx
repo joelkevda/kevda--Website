@@ -4,10 +4,9 @@ import Spline from "@splinetool/react-spline";
 import React, { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, MapPin } from "lucide-react";
 import { UnifiedCTA } from "@/components/sections/UnifiedCTA";
 import { PageWrapper } from "@/components/layout/PageWrapper";
-import { GlobalFootprint } from "@/components/GlobalFootprint";
 
 export default function FrameAbout() {
   const [isSplineLoaded, setIsSplineLoaded] = React.useState(false);
@@ -166,9 +165,43 @@ export default function FrameAbout() {
       </motion.section>
 
       {/* Footprint */}
-      <div id="about-footprint">
-        <GlobalFootprint />
-      </div>
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        id="about-footprint"
+        className="bg-white w-full py-20 md:py-32 px-6 md:px-10 lg:px-16 relative z-10 flex flex-col items-center group"
+      >
+        <div className="w-full max-w-[1600px] flex flex-col items-center gap-16">
+          <h2 className="text-3xl md:text-6xl font-medium text-black text-center">Footprint</h2>
+          <div className="relative w-full h-[350px] sm:h-[450px] md:h-auto md:aspect-[21/9] rounded-[40px] overflow-hidden shadow-sm flex items-center justify-center bg-[#f6f6f6]">
+            <div className="absolute inset-0 pointer-events-none opacity-40">
+              <Image src="/imgs/about/footprint.png" alt="Map BG" fill className="object-cover object-center grayscale brightness-110" />
+            </div>
+            <div className="relative w-full h-full">
+              {/* Marker 1: Boston, MA */}
+              <div className="absolute top-[35%] left-[20%] md:left-[25%] flex flex-col items-center gap-2 md:gap-3 transform -translate-x-1/2 -translate-y-1/2 scale-75 sm:scale-90 md:scale-100">
+                <div className="bg-[#084d43] text-white p-1.5 md:p-2 rounded-full shadow-lg">
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6" fill="white" />
+                </div>
+                <div className="bg-[#084d43] text-white px-4 md:px-6 py-1.5 md:py-2.5 rounded-lg text-sm md:text-lg font-medium shadow-sm whitespace-nowrap">
+                  Boston, MA
+                </div>
+              </div>
+              {/* Marker 2: Bangalore, India */}
+              <div className="absolute top-[65%] left-[80%] md:left-[70%] flex flex-col items-center gap-2 md:gap-3 transform -translate-x-1/2 -translate-y-1/2 scale-75 sm:scale-90 md:scale-100">
+                <div className="bg-[#084d43] text-white p-1.5 md:p-2 rounded-full shadow-lg">
+                  <MapPin className="w-5 h-5 md:w-6 md:h-6" fill="white" />
+                </div>
+                <div className="bg-[#084d43] text-white px-4 md:px-6 py-1.5 md:py-2.5 rounded-lg text-sm md:text-lg font-medium shadow-sm whitespace-nowrap">
+                  Bangalore, India
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.section>
 
       <div id="about-contact">
         <UnifiedCTA 
