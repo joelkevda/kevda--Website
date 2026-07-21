@@ -185,7 +185,7 @@ Respond ONLY with valid JSON in this exact format — no markdown, no preamble:
 
     type EmailPayload = {
       from: string;
-      to: string;
+      to: string[];
       subject: string;
       html: string;
       attachments?: { filename: string; content: string }[];
@@ -193,7 +193,7 @@ Respond ONLY with valid JSON in this exact format — no markdown, no preamble:
 
     const emailPayload: EmailPayload = {
       from: "Kevda Careers <careers@kevdabioworks.com>",
-      to: "joel@kevdabioworks.com",
+      to: ["joel@kevdabioworks.com", "aaron@kevdabioworks.com"],
       subject,
       html,
     };
