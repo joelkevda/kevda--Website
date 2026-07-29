@@ -177,7 +177,7 @@ export default function FrameAbout() {
           <h2 className="text-3xl md:text-6xl font-medium text-black text-center">Footprint</h2>
           <div className="relative w-full h-[350px] sm:h-[450px] md:h-auto md:aspect-[21/9] rounded-[40px] overflow-hidden shadow-sm flex items-center justify-center bg-[#f6f6f6]">
             <div className="absolute inset-0 pointer-events-none opacity-40">
-              <Image src="/imgs/about/footprint.png" alt="Map BG" fill className="object-cover object-center grayscale brightness-110" />
+              <Image src="/imgs/about/footprint.png" alt="Kevda operating footprint: Boston, MA headquarters and execution facility; Bangalore, India execution facility" fill className="object-cover object-center grayscale brightness-110" />
             </div>
             <div className="relative w-full h-full">
               {/* Marker 1: Boston, MA */}
@@ -185,8 +185,9 @@ export default function FrameAbout() {
                 <div className="bg-[#084d43] text-white p-1.5 md:p-2 rounded-full shadow-lg">
                   <MapPin className="w-5 h-5 md:w-6 md:h-6" fill="white" />
                 </div>
-                <div className="bg-[#084d43] text-white px-4 md:px-6 py-1.5 md:py-2.5 rounded-lg text-sm md:text-lg font-medium shadow-sm whitespace-nowrap">
+                <div className="bg-[#084d43] text-white px-4 md:px-6 py-1.5 md:py-2.5 rounded-lg text-sm md:text-lg font-medium shadow-sm whitespace-nowrap flex flex-col items-center">
                   Boston, MA
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-white/70">Headquarters & Execution Facility</span>
                 </div>
               </div>
               {/* Marker 2: Bangalore, India */}
@@ -194,8 +195,9 @@ export default function FrameAbout() {
                 <div className="bg-[#084d43] text-white p-1.5 md:p-2 rounded-full shadow-lg">
                   <MapPin className="w-5 h-5 md:w-6 md:h-6" fill="white" />
                 </div>
-                <div className="bg-[#084d43] text-white px-4 md:px-6 py-1.5 md:py-2.5 rounded-lg text-sm md:text-lg font-medium shadow-sm whitespace-nowrap">
+                <div className="bg-[#084d43] text-white px-4 md:px-6 py-1.5 md:py-2.5 rounded-lg text-sm md:text-lg font-medium shadow-sm whitespace-nowrap flex flex-col items-center">
                   Bangalore, India
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-white/70">Execution Facility</span>
                 </div>
               </div>
             </div>

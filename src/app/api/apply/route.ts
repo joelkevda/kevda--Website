@@ -86,7 +86,7 @@ export async function POST(request: Request) {
     // Step 2 — AI review (non-blocking)
     let aiReview: AiReview | null = null;
     try {
-      const prompt = `You are evaluating a job application for a Business Development & CEO Co-Founder position at Kevda Bioworks — a premium wet-lab CRO serving VC-backed biotech and biopharma companies. Operations in Bangalore, India with US presence in Boston, MA. Scientific leadership has backgrounds at world-leading biotech companies and research universities. The company is operational but pre-revenue. The role requires driving new client acquisition, owning client relationships, understanding the CRO ecosystem, and comfort with equity-only compensation to start.
+      const prompt = `You are evaluating a job application for a Business Development & CEO Co-Founder position at Kevda Bioworks — a premium wet-lab CRO serving VC-backed biotech and biopharma companies. Headquarters and execution facility in Boston, MA; execution facility in Bangalore, India. Scientific leadership has backgrounds at world-leading biotech companies and research universities. The company is operational but pre-revenue. The role requires driving new client acquisition, owning client relationships, understanding the CRO ecosystem, and comfort with equity-only compensation to start.
 
 CANDIDATE CONTEXT
 Current role: ${currentRole || "Not provided"}
