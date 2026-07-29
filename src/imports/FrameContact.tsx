@@ -200,7 +200,7 @@ export default function FrameContact() {
                    { city: "Bangalore, India", tag: "Execution Facility" }
                  ].map((loc, i) => (
                    <div key={i} className={`border border-gray-100 rounded-[24px] overflow-hidden bg-[#fafaf6] shadow-sm ${i === 0 ? 'border-t-[2.5px] border-t-[#d4b57c]' : ''}`}>
-                      <div className="px-6 py-3 flex items-center justify-between bg-white border-b border-gray-100">
+                      <div className="px-6 py-3 flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between bg-white border-b border-gray-100">
                          <span className="text-sm font-medium text-gray-700">{loc.city}</span>
                          <span className="text-[10px] uppercase tracking-wider text-gray-400 font-bold">{loc.tag}</span>
                       </div>

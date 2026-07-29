@@ -187,7 +187,7 @@ export default function FrameAbout() {
                 </div>
                 <div className="bg-[#084d43] text-white px-4 md:px-6 py-1.5 md:py-2.5 rounded-lg text-sm md:text-lg font-medium shadow-sm whitespace-nowrap flex flex-col items-center">
                   Boston, MA
-                  <span className="text-[10px] uppercase tracking-wider font-bold text-white/70">Headquarters & Execution Facility</span>
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-white/70 whitespace-normal text-center max-w-[140px]">Headquarters & Execution Facility</span>
                 </div>
               </div>
               {/* Marker 2: Bangalore, India */}
@@ -197,7 +197,7 @@ export default function FrameAbout() {
                 </div>
                 <div className="bg-[#084d43] text-white px-4 md:px-6 py-1.5 md:py-2.5 rounded-lg text-sm md:text-lg font-medium shadow-sm whitespace-nowrap flex flex-col items-center">
                   Bangalore, India
-                  <span className="text-[10px] uppercase tracking-wider font-bold text-white/70">Execution Facility</span>
+                  <span className="text-[10px] uppercase tracking-wider font-bold text-white/70 whitespace-normal text-center max-w-[140px]">Execution Facility</span>
                 </div>
               </div>
             </div>
