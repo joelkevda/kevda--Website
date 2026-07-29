@@ -30,7 +30,7 @@ export function Hero() {
         </p>
 
         <p className="text-lg md:text-xl font-normal text-black w-full max-w-2xl whitespace-pre-wrap">
-          {`Boston, MA     |     Bangalore, India`}
+          {`Boston, MA | Bangalore, India`}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4">

@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about Kevda's mission, scientific leadership, and operational footprint in Boston and Bangalore.",
+  description: "Learn about Kevda's mission, scientific leadership, and execution facilities in Boston, MA and Bangalore, India.",
   openGraph: {
     title: "About | Kevda Bioworks",
     description: "Built to execute the work that requires the most control.",

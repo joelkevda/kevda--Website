@@ -189,18 +189,18 @@ export default function FrameContact() {
                        <Zap size={14} className="text-white" />
                     </div>
                     <p className="text-xl text-gray-700 leading-relaxed font-medium">
-                       Boston, MA &nbsp;|&nbsp; Bangalore, India
+                       Boston, MA | Bangalore, India
                     </p>
                  </div>
               </div>
 
               <div className="w-full lg:w-[400px] flex flex-col gap-6">
                  {[
-                   { city: "Boston, MA", tag: "Primary Office" },
-                   { city: "Bangalore, India", tag: "Exec. Facility" }
+                   { city: "Boston, MA", tag: "Headquarters & Execution Facility" },
+                   { city: "Bangalore, India", tag: "Execution Facility" }
                  ].map((loc, i) => (
                    <div key={i} className={`border border-gray-100 rounded-[24px] overflow-hidden bg-[#fafaf6] shadow-sm ${i === 0 ? 'border-t-[2.5px] border-t-[#d4b57c]' : ''}`}>
-                      <div className="px-6 py-3 flex items-center justify-between bg-white border-b border-gray-100">
+                      <div className="px-6 py-3 flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between bg-white border-b border-gray-100">
                          <span className="text-sm font-medium text-gray-700">{loc.city}</span>
                          <span className="text-[10px] uppercase tracking-wider text-gray-400 font-bold">{loc.tag}</span>
                       </div>
