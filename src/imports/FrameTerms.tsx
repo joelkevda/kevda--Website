@@ -168,7 +168,7 @@ export default function FrameTerms() {
           <address className="not-italic">
             Kevda Bioworks LLC<br />
             8 The Green, Suite B, Dover, DE 19901<br />
-            info@kevdabioworks.com
+            info@kevda.bio
           </address>
         </>
       )

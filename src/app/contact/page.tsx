@@ -4,10 +4,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   title: "Contact",
-  description: "Start a confidential scope discussion with Kevda Bioworks.",
+  description: "Start a confidential scope discussion with Kevda Bio.",
   openGraph: {
-    title: "Contact | Kevda Bioworks",
-    description: "Start a confidential scope discussion with Kevda Bioworks.",
+    title: "Contact | Kevda Bio",
+    description: "Start a confidential scope discussion with Kevda Bio.",
   },
 };
 

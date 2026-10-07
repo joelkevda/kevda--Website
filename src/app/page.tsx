@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
-  title: "Kevda Bioworks | Integrated mRNA Development",
+  title: "Kevda Bio | Integrated mRNA Development",
   description: "End-to-end wet-lab execution for biotech and biopharma — combining scientific leadership with operational rigor.",
 };
 

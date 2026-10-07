@@ -15,17 +15,17 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kevda.bio"),
   title: {
-    default: "Kevda Bioworks | Integrated mRNA Development",
-    template: "%s | Kevda Bioworks",
+    default: "Kevda Bio | Integrated mRNA Development",
+    template: "%s | Kevda Bio",
   },
   description: "End-to-end wet-lab execution for biotech and biopharma — combining scientific leadership with operational rigor in Molecular Biology, Cell Engineering, and RNA platforms.",
   keywords: ["mRNA", "Biotech", "Molecular Biology", "Cell Engineering", "Vector Engineering", "RNA Delivery", "Preclinical Execution"],
-  authors: [{ name: "Kevda Bioworks" }],
+  authors: [{ name: "Kevda Bio" }],
   openGraph: {
-    title: "Kevda Bioworks | Integrated mRNA Development",
+    title: "Kevda Bio | Integrated mRNA Development",
     description: "End-to-end wet-lab execution for biotech and biopharma.",
     url: "https://kevda.bio",
-    siteName: "Kevda Bioworks",
+    siteName: "Kevda Bio",
     locale: "en_US",
     type: "website",
   },

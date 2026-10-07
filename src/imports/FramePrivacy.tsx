@@ -45,7 +45,7 @@ export default function FramePrivacy() {
         <>
           <p className="mb-4">If you are located in the European Economic Area, the United Kingdom, or Switzerland, we process your personal data under the following legal bases:</p>
           <p className="mb-4"><strong>Legitimate interests.</strong> We process contact form submissions and analytics data to respond to business inquiries and to understand how our website is used. These interests are not overridden by your rights and interests.</p>
-          <p className="mb-4"><strong>Consent.</strong> Where required by applicable law, we will obtain your consent before placing cookies or processing your data for analytics purposes. You may withdraw consent at any time by contacting us at info@kevdabioworks.com or by using your browser&apos;s cookie controls.</p>
+          <p className="mb-4"><strong>Consent.</strong> Where required by applicable law, we will obtain your consent before placing cookies or processing your data for analytics purposes. You may withdraw consent at any time by contacting us at info@kevda.bio or by using your browser&apos;s cookie controls.</p>
           <p><strong>Legal obligation.</strong> We may process your data where necessary to comply with a legal obligation.</p>
         </>
       )
@@ -97,7 +97,7 @@ export default function FramePrivacy() {
             <li><strong>Withdrawal of consent</strong> — where processing is based on consent, withdraw that consent at any time</li>
             <li><strong>Opt out of analytics</strong> — install the Google Analytics Opt-out Browser Add-on at tools.google.com/dlpage/gaoptout</li>
           </ul>
-          <p>To exercise any of these rights, contact us at info@kevdabioworks.com. We will respond within 30 days. We will not charge you for making a request. If you are located in the EEA or UK and are not satisfied with our response, you have the right to lodge a complaint with your local data protection authority.</p>
+          <p>To exercise any of these rights, contact us at info@kevda.bio. We will respond within 30 days. We will not charge you for making a request. If you are located in the EEA or UK and are not satisfied with our response, you have the right to lodge a complaint with your local data protection authority.</p>
         </>
       )
     },
@@ -133,7 +133,7 @@ export default function FramePrivacy() {
           <address className="not-italic">
             Kevda Bioworks LLC<br />
             8 The Green, Suite B, Dover, DE 19901<br />
-            info@kevdabioworks.com
+            info@kevda.bio
           </address>
         </>
       )

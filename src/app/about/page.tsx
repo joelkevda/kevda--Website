@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "About",
   description: "Learn about Kevda's mission, scientific leadership, and execution facilities in Boston, MA and Bangalore, India.",
   openGraph: {
-    title: "About | Kevda Bioworks",
+    title: "About | Kevda Bio",
     description: "Built to execute the work that requires the most control.",
   },
 };

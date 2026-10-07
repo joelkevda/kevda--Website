@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Capabilities",
   description: "End-to-end wet-lab execution across Molecular Biology, Cell Engineering, Protein Characterization, and RNA platforms.",
   openGraph: {
-    title: "Capabilities | Kevda Bioworks",
+    title: "Capabilities | Kevda Bio",
     description: "End-to-end wet-lab execution across Molecular Biology, Cell Engineering, Protein Characterization, and RNA & Delivery platforms.",
   },
 };
