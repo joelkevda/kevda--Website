@@ -2,6 +2,7 @@ import FrameAbout from "@/imports/FrameAbout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About",
   description: "Learn about Kevda's mission, scientific leadership, and execution facilities in Boston, MA and Bangalore, India.",
   openGraph: {

@@ -13,6 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kevda.bio"),
   title: {
     default: "Kevda Bioworks | Integrated mRNA Development",
     template: "%s | Kevda Bioworks",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kevda Bioworks | Integrated mRNA Development",
     description: "End-to-end wet-lab execution for biotech and biopharma.",
-    url: "https://kevdabioworks.com",
+    url: "https://kevda.bio",
     siteName: "Kevda Bioworks",
     locale: "en_US",
     type: "website",

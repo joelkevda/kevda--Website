@@ -2,6 +2,7 @@ import FrameContact from "@/imports/FrameContact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact",
   description: "Start a confidential scope discussion with Kevda Bioworks.",
   openGraph: {

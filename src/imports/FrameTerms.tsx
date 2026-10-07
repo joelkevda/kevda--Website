@@ -178,7 +178,7 @@ export default function FrameTerms() {
   return (
     <LegalTemplate 
       title="Terms of Use" 
-      subtitle="Effective date: May 1, 2026. These Terms of Use govern your access to and use of the Kevda Bioworks LLC website located at kevdabioworks.com." 
+      subtitle="Effective date: May 1, 2026. These Terms of Use govern your access to and use of the Kevda Bioworks LLC website located at kevda.bio." 
       sections={sections} 
     />
   );

@@ -2,6 +2,7 @@ import FrameCell from "@/imports/FrameCell";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/capabilities/cell-engineering" },
   title: "Cell Engineering",
   description: "Functional workflows, transfection, knockdown, and IC50 dose-response profiling.",
   openGraph: {
