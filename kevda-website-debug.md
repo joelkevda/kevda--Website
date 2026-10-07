@@ -1,12 +1,12 @@
 ---
 name: kevda-website-debug
-description: "Structured debugging protocol for the Kevda Bioworks MARKETING WEBSITE (kevdabioworks.com / kevda-redesign.vercel.app). Use this skill whenever something is broken on the marketing site, a Vercel deployment fails, a Next.js build errors, a Three.js 3D scene isn't rendering, fonts aren't loading, a page returns 404, or any visual/rendering issue is reported. Also trigger when the user says 'site is broken', 'build failed', 'Vercel error', '404', 'blank page', 'font wrong', '3D not showing', or describes any issue on the public marketing website. NOTE: This skill is for the MARKETING WEBSITE only — not the lab management platform. For platform issues use kevda-debug-protocol instead."
+description: "Structured debugging protocol for the Kevda Bioworks MARKETING WEBSITE (kevda.bio / kevda-redesign.vercel.app). Use this skill whenever something is broken on the marketing site, a Vercel deployment fails, a Next.js build errors, a Three.js 3D scene isn't rendering, fonts aren't loading, a page returns 404, or any visual/rendering issue is reported. Also trigger when the user says 'site is broken', 'build failed', 'Vercel error', '404', 'blank page', 'font wrong', '3D not showing', or describes any issue on the public marketing website. NOTE: This skill is for the MARKETING WEBSITE only — not the lab management platform. For platform issues use kevda-debug-protocol instead."
 ---
 
 # Kevda Website Debug Protocol
 
 ## Site Architecture
-- **Live site**: kevdabioworks.com (github.com/joelkevda/kevda--Website, main branch)
+- **Live site**: kevda.bio (github.com/joelkevda/kevda--Website, main branch)
 - **Redesign sandbox**: kevda-redesign.vercel.app (github.com/joelkevda/kevda-redesign, main branch)
 - **Stack**: Next.js 14 (App Router), TypeScript, Turbopack, deployed on Vercel
 - **Local path**: C:\Projects\kevda-website

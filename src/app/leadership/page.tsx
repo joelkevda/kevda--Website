@@ -2,6 +2,7 @@ import FrameLeadership from "@/imports/FrameLeadership";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/leadership" },
   title: "Leadership",
   description: "Meet the scientific and operational leaders behind Kevda Bioworks.",
   openGraph: {
