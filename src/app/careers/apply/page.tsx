@@ -160,7 +160,7 @@ export default function ApplyPage() {
             Business Development &amp; CEO
           </h1>
           <p style={{ fontSize: 15, color: TEXT_2, margin: 0, lineHeight: 1.6 }}>
-            Kevda Bioworks · Boston, MA | Bangalore, India · Equity-based · Remote
+            Kevda Bio · Boston, MA | Bangalore, India · Equity-based · Remote
           </p>
         </header>
 
@@ -441,7 +441,7 @@ function SuccessState() {
           margin: "0 auto",
         }}
       >
-        Thank you for applying to Kevda Bioworks. We review every application
+        Thank you for applying to Kevda Bio. We review every application
         personally. If your background is a strong fit, you&apos;ll hear from us
         within a few business days.
       </p>

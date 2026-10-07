@@ -86,7 +86,7 @@ export async function POST(request: Request) {
     // Step 2 — AI review (non-blocking)
     let aiReview: AiReview | null = null;
     try {
-      const prompt = `You are evaluating a job application for a Business Development & CEO Co-Founder position at Kevda Bioworks — a premium wet-lab CRO serving VC-backed biotech and biopharma companies. Headquarters and execution facility in Boston, MA; execution facility in Bangalore, India. Scientific leadership has backgrounds at world-leading biotech companies and research universities. The company is operational but pre-revenue. The role requires driving new client acquisition, owning client relationships, understanding the CRO ecosystem, and comfort with equity-only compensation to start.
+      const prompt = `You are evaluating a job application for a Business Development & CEO Co-Founder position at Kevda Bio — a premium wet-lab CRO serving VC-backed biotech and biopharma companies. Headquarters and execution facility in Boston, MA; execution facility in Bangalore, India. Scientific leadership has backgrounds at world-leading biotech companies and research universities. The company is operational but pre-revenue. The role requires driving new client acquisition, owning client relationships, understanding the CRO ecosystem, and comfort with equity-only compensation to start.
 
 CANDIDATE CONTEXT
 Current role: ${currentRole || "Not provided"}
@@ -186,14 +186,16 @@ Respond ONLY with valid JSON in this exact format — no markdown, no preamble:
     type EmailPayload = {
       from: string;
       to: string[];
+      replyTo: string;
       subject: string;
       html: string;
       attachments?: { filename: string; content: string }[];
     };
 
     const emailPayload: EmailPayload = {
-      from: "Kevda Careers <careers@kevdabioworks.com>",
-      to: ["joel@kevdabioworks.com", "aaron@kevdabioworks.com"],
+      from: "Kevda Careers <careers@kevda.bio>",
+      to: ["joel@kevda.bio", "aaron@kevda.bio"],
+      replyTo: "joel@kevda.bio",
       subject,
       html,
     };
@@ -349,7 +351,7 @@ function buildEmailHtml(d: {
     </div>
 
     <div style="background:#f4f7f6;padding:18px 32px;font-size:12px;color:#888;">
-      Kevda Bioworks · BD/CEO Co-Founder Application · Resume attached (if provided)
+      Kevda Bio · BD/CEO Co-Founder Application · Resume attached (if provided)
     </div>
   </div>`;
 }

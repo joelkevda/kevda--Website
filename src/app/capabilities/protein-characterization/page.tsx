@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Protein Characterization",
   description: "Quantitative assays, ELISA, Western Blotting, and IF imaging for biological confirmation.",
   openGraph: {
-    title: "Protein Characterization & Immunoassays | Kevda Bioworks",
+    title: "Protein Characterization & Immunoassays | Kevda Bio",
     description: "Quantitative and visual confirmation of target biology — ELISA, Western blotting, and immunofluorescence.",
   },
 };

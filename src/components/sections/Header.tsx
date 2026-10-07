@@ -31,8 +31,8 @@ export function Header() {
           ? 'bg-white/95 backdrop-blur-xl shadow-sm border-b border-black/5'
           : 'bg-transparent'
       }`}>
-        <Link href="/" aria-label="Kevda Bioworks — Home" className="flex items-center group">
-          <Image src="/brand/kevda-logo-black.svg" alt="Logo" width={233} height={64} priority className="h-10 lg:h-16 w-auto group-hover:opacity-70 transition-opacity" />
+        <Link href="/" aria-label="Kevda Bio — Home" className="flex items-center group">
+          <Image src="/brand/kevda-logo-black.svg" alt="Kevda Bio" width={233} height={64} priority className="h-10 lg:h-16 w-auto group-hover:opacity-70 transition-opacity" />
         </Link>
         
         <div className="flex items-center gap-6 lg:gap-10">

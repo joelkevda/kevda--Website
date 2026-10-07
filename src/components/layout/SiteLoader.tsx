@@ -101,7 +101,7 @@ export function SiteLoader() {
                 >
                   <Image 
                     src="/brand/kevda-mark-black.svg"
-                    alt="Kevda Logo" 
+                    alt="Kevda Bio" 
                     fill 
                     className="object-contain"
                     priority
@@ -117,7 +117,7 @@ export function SiteLoader() {
                 className="flex flex-col items-center gap-4 text-center"
               >
                 <h2 className="text-2xl md:text-3xl font-normal tracking-[0.2em] text-black uppercase">
-                  Kevda Bioworks
+                  Kevda Bio
                 </h2>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-px bg-gray-200"></div>
