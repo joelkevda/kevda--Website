@@ -100,7 +100,7 @@ export function SiteLoader() {
                   className="relative w-24 h-24 md:w-32 md:h-32"
                 >
                   <Image 
-                    src="/assets/799bf25d4a8cf43f03f498d4978b69fb6a4059a1.png" 
+                    src="/brand/kevda-mark-black.svg"
                     alt="Kevda Logo" 
                     fill 
                     className="object-contain"

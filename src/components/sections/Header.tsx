@@ -26,16 +26,13 @@ export function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-50 py-4 px-4 md:px-8 xl:px-16 flex items-center justify-between transition-all duration-300 ${
+      <header className={`fixed top-0 left-0 w-full z-50 py-4 lg:py-2 px-4 md:px-8 xl:px-16 flex items-center justify-between transition-all duration-300 ${
         scrolled
           ? 'bg-white/95 backdrop-blur-xl shadow-sm border-b border-black/5'
           : 'bg-transparent'
       }`}>
-        <Link href="/" aria-label="Kevda Bioworks — Home" className="flex items-center gap-2 lg:gap-3 group">
-          <div className="relative w-10 h-10 lg:w-12 lg:h-12 overflow-hidden bg-cover">
-            <Image src="/assets/799bf25d4a8cf43f03f498d4978b69fb6a4059a1.png" alt="Logo" fill className="object-cover" />
-          </div>
-          <span className="text-xl lg:text-2xl font-normal text-black font-space-grotesk whitespace-nowrap group-hover:opacity-70 transition-opacity">Kevda Bioworks</span>
+        <Link href="/" aria-label="Kevda Bioworks — Home" className="flex items-center group">
+          <Image src="/brand/kevda-logo-black.svg" alt="Logo" width={233} height={64} priority className="h-10 lg:h-16 w-auto group-hover:opacity-70 transition-opacity" />
         </Link>
         
         <div className="flex items-center gap-6 lg:gap-10">
