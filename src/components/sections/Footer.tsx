@@ -12,11 +12,8 @@ export function Footer() {
         <div className="bg-white rounded-[40px] p-8 md:p-14 flex flex-col lg:flex-row gap-12 md:gap-16 justify-between items-start w-full">
            
            <div className="flex flex-col gap-2 max-w-[400px]">
-              <Link href="/" className="flex items-center gap-3 group">
-                 <div className="relative w-10 h-10 md:w-12 md:h-12 overflow-hidden">
-                    <Image src="/assets/799bf25d4a8cf43f03f498d4978b69fb6a4059a1.png" alt="Logo" fill className="object-cover" />
-                 </div>
-                 <span className="text-xl md:text-2xl text-black font-normal group-hover:opacity-70 transition-opacity">Kevda Bioworks</span>
+              <Link href="/" className="flex items-center group">
+                 <Image src="/brand/kevda-logo-black.svg" alt="Logo" width={175} height={48} className="h-10 md:h-12 w-auto group-hover:opacity-70 transition-opacity" />
               </Link>
               <p className="text-[#727272] font-normal leading-relaxed mt-4">
                 Integrated mRNA Development.<br/>Built for Preclinical Execution.
