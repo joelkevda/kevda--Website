@@ -32,8 +32,8 @@ export function Header() {
           : 'bg-transparent'
       }`}>
         <Link href="/" aria-label="Kevda Bio — Home" className="flex items-center group">
-          <Image src="/brand/kevda-logo-notagline-black.svg" alt="Kevda Bio" width={169} height={32} priority className="md:hidden h-8 my-1 w-auto group-hover:opacity-70 transition-opacity" />
-          <Image src="/brand/kevda-logo-black.svg" alt="Kevda Bio" width={233} height={64} priority className="hidden md:block h-10 lg:h-16 w-auto group-hover:opacity-70 transition-opacity" />
+          <Image src="/brand/kevda-logo-notagline-black.svg" alt="Kevda Bio" width={169} height={32} priority className="lg:hidden h-8 my-1 w-auto group-hover:opacity-70 transition-opacity" />
+          <Image src="/brand/kevda-logo-black.svg" alt="Kevda Bio" width={233} height={64} priority className="hidden lg:block h-16 w-auto group-hover:opacity-70 transition-opacity" />
         </Link>
         
         <div className="flex items-center gap-6 lg:gap-10">

@@ -13,8 +13,7 @@ export function Footer() {
            
            <div className="flex flex-col gap-2 max-w-[400px]">
               <Link href="/" className="flex items-center group">
-                 <Image src="/brand/kevda-logo-notagline-black.svg" alt="Kevda Bio" width={169} height={32} className="md:hidden h-8 my-1 w-auto group-hover:opacity-70 transition-opacity" />
-                 <Image src="/brand/kevda-logo-black.svg" alt="Kevda Bio" width={233} height={64} className="hidden md:block h-16 w-auto group-hover:opacity-70 transition-opacity" />
+                 <Image src="/brand/kevda-logo-notagline-black.svg" alt="Kevda Bio" width={169} height={32} className="h-8 my-1 w-auto group-hover:opacity-70 transition-opacity" />
               </Link>
               <p className="text-[#727272] font-normal leading-relaxed mt-4">
                 Integrated mRNA Development.<br/>Built for Preclinical Execution.
